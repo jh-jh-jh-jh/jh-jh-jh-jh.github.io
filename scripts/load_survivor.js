@@ -4,7 +4,7 @@ details.addEventListener('toggle', async (event) => {
     if (event.target.open && !content.innerHTML) {
         const response = await fetch("./survivor/content.html");
         const html = await response.text();
-        content.innerHTML = html;
+        content.outerHTML = html;
     }
 });
 

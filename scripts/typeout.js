@@ -5,10 +5,15 @@ let caret = document.getElementById("caret");
 let nameElement = document.getElementById("name");
 let nameString = nameElement.textContent;
 let openBrace = document.getElementById("open-brace");
+let accentColor = getComputedStyle(document.documentElement).getPropertyValue('--accent');
+let headerColor = getComputedStyle(document.documentElement).getPropertyValue('--header-color');
+openBrace.textContent = "";
+openBrace.style.color = headerColor;
 let closeBrace = document.getElementById("close-brace");
-let color = getComputedStyle(document.documentElement).getPropertyValue('--accent');
+closeBrace.textContent = "";
+closeBrace.style.color = headerColor;
 nameElement.textContent = "";
-caret.style.color = color;
+caret.style.color = accentColor;
 caret.textContent = "|";
 (async () => {
     await sleep(500);
@@ -20,8 +25,8 @@ caret.textContent = "|";
         await sleep(50);
     }
     closeBrace.textContent = "]";
-    closeBrace.style.color = color;
-    openBrace.style.color = color;
+    closeBrace.style.color = accentColor;
+    openBrace.style.color = accentColor;
     await sleep(300);
     caret.hidden = true;
 })();

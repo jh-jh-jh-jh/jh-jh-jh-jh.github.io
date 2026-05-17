@@ -44,6 +44,10 @@ h2, .cool-text {
   font-weight: 700;
 }
 
+.accent {
+  color: var(--accent);
+}
+
 h3 {
   color: var(--header-color);
 }
