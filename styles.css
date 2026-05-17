@@ -20,7 +20,7 @@ html {
 
   --header-color: #ffffff;
   --body-text-color: #b2b2b2;
-  --emphasis: rgb(149, 198, 255);
+  --emphasis: rgb(255, 255, 255);
 
   font: 12px/150% var(--sans);
   font-weight: 300;
@@ -71,6 +71,7 @@ body {
   background: var(--main-bg);
   box-shadow: var(--body-shadow);
   display: flex;
+  box-sizing:border-box;
   flex-direction: column;
   caret-color: transparent;
 }
