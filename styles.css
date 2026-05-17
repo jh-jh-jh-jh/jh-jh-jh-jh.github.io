@@ -20,7 +20,7 @@ html {
 
   --header-color: #ffffff;
   --body-text-color: #b2b2b2;
-  --emphasis: #afa7fd;
+  --emphasis: rgb(149, 198, 255);
 
   font: 12px/150% var(--sans);
   font-weight: 300;
