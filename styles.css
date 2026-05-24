@@ -3,24 +3,23 @@
 html {
   --body-width: 680px;
 
-  --background: #121212;
-  --main-bg: #262626;
-  --card-bg: #343434;
-  --card-hover-bg: #3a3a3a;
-  --card-click-bg: #ff39642f;
-  --border: #515151;
-  --accent: #ff3964;
-  --accent-shadow: #839cff24;
+  --background: #1f2430;
+  --main-bg: #2a3142;
+  --card-bg: #353d52;
+  --card-hover-bg: #ff424220;
+  --card-click-bg: #ff42426b;
+  --border: #49526b;
+  --accent: #ff4242;
+  --accent-shadow: #ff424220;
   --body-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   --card-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  --header-color: #f3f5ff;
+  --body-text-color: #c8d0e0;
+  --emphasis: #ffffff;
 
   --heading: "Mozilla Headline", sans-serif;
   --sans: "Inter", sans-serif;
   --mono: 'JetBrains Mono', monospace;
-
-  --header-color: #ffffff;
-  --body-text-color: #b2b2b2;
-  --emphasis: rgb(255, 255, 255);
 
   font: 12px/150% var(--sans);
   font-weight: 300;
