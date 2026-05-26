@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Gidole&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 html {
-  --background: #212121;
-  --main-bg: #212121;
-  --card-bg: #323232;
-  --card-hover-bg: #75f39636;
-  --card-click-bg: #3ae2676f;
-  --border: #5c5c5c;
-  --accent: #3be869;
-  --accent-shadow: #32e96347;
+  --background: #0f1720;
+  --main-bg: #162231;
+  --card-bg: #1f3145;
+  --card-hover-bg: #4aa3ff33;
+  --card-click-bg: #2f8fff66;
+  --border: #3f5f7a;
+  --accent: #4db8ff;
+  --accent-shadow: #2196f347;
 
   --body-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
   --card-shadow: 0px 5px 12px rgba(0, 0, 0, 0);
 
-  --header-color: #ffffff;
-  --body-text-color: #ffffff;
-  --emphasis: #3be869;
+  --header-color: #f4fbff;
+  --body-text-color: #e8f4ff;
+  --emphasis: #7fd0ff;
 
   --heading: "IBM Plex Sans", sans-serif;
   --sans: "Gidole", sans-serif;
@@ -64,7 +64,7 @@ em {
 
 body {
   margin: 0;
-  width: 800px;
+  width: 700px;
   max-width: 100%;
   margin: 0px auto;
   background: var(--main-bg);
@@ -73,6 +73,8 @@ body {
   box-sizing:border-box;
   flex-direction: column;
   caret-color: transparent;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 header {
@@ -94,6 +96,7 @@ header {
     background-color: var(--card-bg);
     height: 20px;
     width: 60px;
+    border-radius:3px;
     padding: 0px 10px;
     margin-right: 10px;
     font-size: 0.75em;
@@ -173,6 +176,7 @@ ul {
   }
 
   > ul {
+    border-radius:5px;
     list-style: none;
     background-color: var(--card-bg);
     display:flex;
@@ -193,6 +197,7 @@ ul {
         padding:2.5px;
         width:40px;
         height:40px;
+        border-radius:3px;
 
         &:hover {
           transform:scale(1.2);
@@ -222,7 +227,7 @@ ul {
   > details {
     width:100%;
     > div > section {
-      margin:20px 0px;
+      margin-top:20px;
     }
   }
 }
@@ -234,6 +239,7 @@ ul {
   display:flex;
   flex-direction:column;
   align-content:center;
+  border-radius:5px;
 
   summary {
     color:var(--header-color);
@@ -241,6 +247,7 @@ ul {
   }
 
   > details > div {
+    border-radius:5px;
     background-color:var(--main-bg);
     margin-top:10px;
     display:flex;
